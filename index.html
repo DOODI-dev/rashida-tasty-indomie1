@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Rashida Tasty Indomie | Sunyani</title>
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffdf7;
+    color: #17251d;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+
+    background:
+        linear-gradient(
+            90deg,
+            #075b2d,
+            #08752f,
+            #e31b23
+        );
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 3px 15px rgba(0,0,0,0.15);
+}
+
+.navbar {
+
+    min-height: 78px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: white;
+}
+
+.logo-icon {
+
+    font-size: 38px;
+}
+
+.logo-text h2 {
+
+    font-size: 22px;
+
+    line-height: 1;
+}
+
+.logo-text h2 span {
+
+    color: #ffd21c;
+}
+
+.logo-text small {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 11px;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+
+    display: flex;
+
+    gap: 35px;
+}
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+
+    color: #ffd21c;
+}
+
+
+/* TOP ORDER BUTTON */
+
+.order-top {
+
+    background: #ffd21c;
+
+    color: #075b2d;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 540px;
+
+    /*
+       DIRECT ONLINE IMAGE
+       No images folder required.
+    */
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.20)
+        ),
+
+        url("https://images.pexels.com/photos/28460881/pexels-photo-28460881.jpeg?auto=compress&cs=tinysrgb&w=1600");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.hero-content {
+
+    width: 90%;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    color: white;
+}
+
+
+.hero-small {
+
+    color: #ffd21c;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+.hero h1 {
+
+    font-size:
+        clamp(48px, 7vw, 82px);
+
+    line-height: 0.95;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 span {
+
+    color: #e31b23;
+}
+
+
+.hero p {
+
+    max-width: 550px;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    margin-bottom: 28px;
+}
+
+
+.hero-btn {
+
+    display: inline-block;
+
+    background: #e31b23;
+
+    color: white;
+
+    padding: 16px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+
+.hero-btn:hover {
+
+    background: #b9151b;
+
+    transform: translateY(-2px);
+}
+
+
+/* HERO FEATURES */
+
+.hero-features {
+
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 35px;
+}
+
+
+.hero-feature {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-weight: bold;
+}
+
+
+.hero-feature-icon {
+
+    color: #ffd21c;
+
+    font-size: 25px;
+}
+
+
+/* =====================================================
+   GENERAL SECTIONS
+===================================================== */
+
+section {
+
+    padding: 70px 0;
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.red-title {
+
+    color: #e31b23;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    font-style: italic;
+}
+
+
+.section-title h2 {
+
+    color: #075b2d;
+
+    font-size: 40px;
+
+    margin-top: 5px;
+}
+
+
+.section-title p {
+
+    color: #666;
+
+    margin-top: 8px;
+}
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+.menu-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.food-card {
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.09);
+
+    transition: 0.25s;
+}
+
+
+.food-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0,0,0,0.14);
+}
+
+
+/* FOOD IMAGE */
+
+.food-image {
+
+    height: 240px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #eee;
+}
+
+
+.food-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.3s;
+}
+
+
+.food-card:hover img {
+
+    transform: scale(1.05);
+}
+
+
+/* POPULAR LABEL */
+
+.popular {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    background: #e31b23;
+
+    color: white;
+
+    padding: 8px 13px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* FOOD INFORMATION */
+
+.food-info {
+
+    padding: 20px;
+}
+
+
+.food-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+
+.food-header h3 {
+
+    font-size: 23px;
+}
+
+
+.price {
+
+    background: #e31b23;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+}
+
+
+.food-description {
+
+    color: #666;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+
+/* QUANTITY */
+
+.quantity {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.quantity label {
+
+    font-weight: bold;
+}
+
+
+.quantity select {
+
+    flex: 1;
+
+    padding: 11px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   WHY US
+===================================================== */
+
+.why-us {
+
+    background: #f2f8f1;
+}
+
+
+.features-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.feature-card {
+
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 16px;
+}
+
+
+.feature-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+.feature-card h3 {
+
+    color: #075b2d;
+
+    margin-bottom: 10px;
+}
+
+
+.feature-card p {
+
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   ORDER SECTION
+===================================================== */
+
+.order-section {
+
+    background: #f7faef;
+}
+
+
+.order-wrapper {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+.order-text h2 {
+
+    color: #075b2d;
+
+    font-size: 45px;
+
+    margin: 8px 0 15px;
+}
+
+
+.order-text p {
+
+    color: #555;
+
+    line-height: 1.6;
+
+    font-size: 17px;
+}
+
+
+.order-benefits {
+
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+.benefit {
+
+    text-align: center;
+
+    color: #075b2d;
+
+    font-weight: bold;
+}
+
+
+.benefit-icon {
+
+    display: block;
+
+    font-size: 32px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   ORDER FORM
+===================================================== */
+
+.order-form {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px
+        rgba(0,0,0,0.10);
+}
+
+
+.form-group {
+
+    margin-bottom: 17px;
+}
+
+
+.form-group label {
+
+    display: block;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+
+    color: #17452b;
+}
+
+
+.form-group input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+.form-group input:focus {
+
+    border-color: #16833b;
+}
+
+
+/* TOTAL */
+
+.total {
+
+    margin-top: 20px;
+
+    padding: 17px;
+
+    background: #eff8e9;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.total span {
+
+    font-weight: bold;
+}
+
+
+.total strong {
+
+    color: #075b2d;
+
+    font-size: 24px;
+}
+
+
+/* WHATSAPP */
+
+.whatsapp {
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 16px;
+
+    background: #16833b;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.whatsapp:hover {
+
+    background: #0c612a;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    background: #064d27;
+
+    color: white;
+
+    padding: 45px 0 20px;
+}
+
+
+.footer-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+.footer-brand h2 {
+
+    margin-bottom: 8px;
+}
+
+
+.footer-brand span {
+
+    color: #ffd21c;
+}
+
+
+.footer-brand p {
+
+    color: #ddd;
+
+    margin-top: 5px;
+}
+
+
+.footer-social h3 {
+
+    margin-bottom: 12px;
+}
+
+
+.socials {
+
+    display: flex;
+
+    gap: 12px;
+}
+
+
+.social {
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #075b2d;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.footer-bottom {
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.2);
+
+    padding-top: 20px;
+
+    text-align: center;
+
+    color: #ccc;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width: 850px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .order-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero-features {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<div class="container navbar">
+
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            🍜
+        </div>
+
+        <div class="logo-text">
+
+            <h2>
+                Rashida
+                <span>Tasty Indomie</span>
+            </h2>
+
+            <small>
+                Hot • Fresh • Delicious
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <nav class="nav-links">
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#menu">
+            Menu
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#order">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <button
+        class="order-top"
+        onclick="goToOrder()">
+
+        💬 Order Now
+
+    </button>
+
+</div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="hero"
+    id="home">
+
+<div class="hero-content">
+
+
+    <div class="hero-small">
+        Rashida Tasty
+    </div>
+
+
+    <h1>
+
+        Indomie
+        <span>Done Right.</span>
+
+    </h1>
+
+
+    <p>
+
+        Your favourite Indomie, prepared fresh
+        with delicious eggs, sausage, chicken
+        and vegetables in Sunyani.
+
+    </p>
+
+
+    <a
+        href="#menu"
+        class="hero-btn">
+
+        View Our Menu →
+
+    </a>
+
+
+    <div class="hero-features">
+
+
+        <div class="hero-feature">
+
+            <span class="hero-feature-icon">
+                🍴
+            </span>
+
+            Freshly Prepared
+
+        </div>
+
+
+        <div class="hero-feature">
+
+            <span class="hero-feature-icon">
+                🛵
+            </span>
+
+            Fast Delivery
+
+        </div>
+
+
+        <div class="hero-feature">
+
+            <span class="hero-feature-icon">
+                ❤️
+            </span>
+
+            Great Taste
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MENU
+===================================================== -->
+
+<section id="menu">
+
+<div class="container">
+
+
+    <div class="section-title">
+
+        <div class="red-title">
+            Our Menu
+        </div>
+
+        <h2>
+            Choose Your Favourite
+        </h2>
+
+        <p>
+            Freshly prepared Indomie with tasty
+            Ghana-style toppings.
+        </p>
+
+    </div>
+
+
+
+    <div class="menu-grid">
+
+
+        <!-- =================================================
+             REGULAR
+        ================================================= -->
+
+        <div class="food-card">
+
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.pexels.com/photos/6048196/pexels-photo-6048196.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    alt="Indomie with egg, chicken and vegetables"
+                    loading="lazy">
+
+            </div>
+
+
+            <div class="food-info">
+
+
+                <div class="food-header">
+
+                    <h3>
+                        Regular
+                    </h3>
+
+                    <span class="price">
+                        GHS 25
+                    </span>
+
+                </div>
+
+
+                <p class="food-description">
+
+                    1 Indomie + Egg + Fresh Vegetables
+
+                </p>
+
+
+                <div class="quantity">
+
+                    <label>
+                        Quantity:
+                    </label>
+
+
+                    <select
+                        id="q1"
+                        onchange="calculateTotal()">
+
+                        <option value="0">
+                            0
+                        </option>
+
+                        <option value="1">
+                            1
+                        </option>
+
+                        <option value="2">
+                            2
+                        </option>
+
+                        <option value="3">
+                            3
+                        </option>
+
+                        <option value="4">
+                            4
+                        </option>
+
+                        <option value="5">
+                            5
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SPECIAL
+        ================================================= -->
+
+        <div class="food-card">
+
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.pexels.com/photos/28460868/pexels-photo-28460868.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    alt="Special Indomie with chicken"
+                    loading="lazy">
+
+
+                <span class="popular">
+                    MOST POPULAR
+                </span>
+
+            </div>
+
+
+            <div class="food-info">
+
+
+                <div class="food-header">
+
+                    <h3>
+                        Special
+                    </h3>
+
+                    <span class="price">
+                        GHS 35
+                    </span>
+
+                </div>
+
+
+                <p class="food-description">
+
+                    2 Indomie + 2 Eggs + Sausage
+
+                </p>
+
+
+                <div class="quantity">
+
+                    <label>
+                        Quantity:
+                    </label>
+
+
+                    <select
+                        id="q2"
+                        onchange="calculateTotal()">
+
+                        <option value="0">
+                            0
+                        </option>
+
+                        <option value="1">
+                            1
+                        </option>
+
+                        <option value="2">
+                            2
+                        </option>
+
+                        <option value="3">
+                            3
+                        </option>
+
+                        <option value="4">
+                            4
+                        </option>
+
+                        <option value="5">
+                            5
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             JUMBO
+        ================================================= -->
+
+        <div class="food-card">
+
+
+            <div class="food-image">
+
+                <img
+                    src="https://images.pexels.com/photos/28460881/pexels-photo-28460881.jpeg?auto=compress&cs=tinysrgb&w=900"
+                    alt="Jumbo Indomie with chicken"
+                    loading="lazy">
+
+            </div>
+
+
+            <div class="food-info">
+
+
+                <div class="food-header">
+
+                    <h3>
+                        Jumbo
+                    </h3>
+
+                    <span class="price">
+                        GHS 50
+                    </span>
+
+                </div>
+
+
+                <p class="food-description">
+
+                    3 Indomie + Chicken + Sausage + Cheese
+
+                </p>
+
+
+                <div class="quantity">
+
+                    <label>
+                        Quantity:
+                    </label>
+
+
+                    <select
+                        id="q3"
+                        onchange="calculateTotal()">
+
+                        <option value="0">
+                            0
+                        </option>
+
+                        <option value="1">
+                            1
+                        </option>
+
+                        <option value="2">
+                            2
+                        </option>
+
+                        <option value="3">
+                            3
+                        </option>
+
+                        <option value="4">
+                            4
+                        </option>
+
+                        <option value="5">
+                            5
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
+
+<section
+    class="why-us"
+    id="about">
+
+<div class="container">
+
+
+    <div class="section-title">
+
+        <div class="red-title">
+            Why Choose Us?
+        </div>
+
+        <h2>
+            Good Food, Made With Care
+        </h2>
+
+    </div>
+
+
+    <div class="features-grid">
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🍜
+            </div>
+
+            <h3>
+                Freshly Prepared
+            </h3>
+
+            <p>
+                Every order is prepared fresh
+                so you enjoy your Indomie hot
+                and delicious.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🛵
+            </div>
+
+            <h3>
+                Fast Delivery
+            </h3>
+
+            <p>
+                We deliver your favourite meal
+                quickly around Sunyani.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                ❤️
+            </div>
+
+            <h3>
+                Great Taste
+            </h3>
+
+            <p>
+                Generous portions and tasty
+                toppings prepared with care.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ORDER
+===================================================== -->
+
+<section
+    class="order-section"
+    id="order">
+
+<div class="container order-wrapper">
+
+
+    <div class="order-text">
+
+        <div class="red-title">
+            Place Your Order
+        </div>
+
+
+        <h2>
+            Quick & Easy
+        </h2>
+
+
+        <p>
+
+            Select your favourite Indomie,
+            enter your details and send your
+            order directly to us on WhatsApp.
+
+        </p>
+
+
+        <div class="order-benefits">
+
+
+            <div class="benefit">
+
+                <span class="benefit-icon">
+                    🕐
+                </span>
+
+                Fast
+                <br>
+                Delivery
+
+            </div>
+
+
+            <div class="benefit">
+
+                <span class="benefit-icon">
+                    🛡️
+                </span>
+
+                Safe &
+                <br>
+                Hygienic
+
+            </div>
+
+
+            <div class="benefit">
+
+                <span class="benefit-icon">
+                    📍
+                </span>
+
+                Sunyani
+                <br>
+                Area
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ORDER FORM -->
+
+    <div class="order-form">
+
+
+        <div class="form-group">
+
+            <label>
+                Your Name
+            </label>
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Enter your name">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Location
+            </label>
+
+            <input
+                id="location"
+                type="text"
+                placeholder="Your location in Sunyani">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Phone Number
+            </label>
+
+            <input
+                id="phone"
+                type="tel"
+                placeholder="Your phone number">
+
+        </div>
+
+
+        <div class="total">
+
+            <span>
+                Total Amount
+            </span>
+
+            <strong>
+
+                GHS
+                <span id="total">
+                    0
+                </span>
+
+            </strong>
+
+        </div>
+
+
+        <button
+            class="whatsapp"
+            onclick="placeOrder()">
+
+            💬 Order on WhatsApp
+
+        </button>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container">
+
+
+    <div class="footer-content">
+
+
+        <div class="footer-brand">
+
+            <h2>
+
+                Rashida
+                <span>Tasty Indomie</span>
+
+            </h2>
+
+            <p>
+                Hot • Fresh • Delicious
+            </p>
+
+            <p>
+                Sunyani, Ghana
+            </p>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h3>
+                Follow Us
+            </h3>
+
+
+            <div class="socials">
+
+                <a href="#" class="social">
+                    f
+                </a>
+
+                <a href="#" class="social">
+                    ◎
+                </a>
+
+                <a href="#" class="social">
+                    ♪
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Rashida Tasty Indomie.
+        All Rights Reserved.
+
+    </div>
+
+</div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   CALCULATE TOTAL
+===================================================== */
+
+function calculateTotal() {
+
+
+    const regular =
+        Number(
+            document.getElementById("q1").value
+        );
+
+
+    const special =
+        Number(
+            document.getElementById("q2").value
+        );
+
+
+    const jumbo =
+        Number(
+            document.getElementById("q3").value
+        );
+
+
+    const total =
+        (regular * 25) +
+        (special * 35) +
+        (jumbo * 50);
+
+
+    document.getElementById("total").innerText =
+        total;
+
+
+    return total;
+}
+
+
+
+/* =====================================================
+   GO TO ORDER
+===================================================== */
+
+function goToOrder() {
+
+    document
+        .getElementById("order")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+
+
+/* =====================================================
+   PLACE ORDER
+===================================================== */
+
+function placeOrder() {
+
+
+    const regular =
+        Number(
+            document.getElementById("q1").value
+        );
+
+
+    const special =
+        Number(
+            document.getElementById("q2").value
+        );
+
+
+    const jumbo =
+        Number(
+            document.getElementById("q3").value
+        );
+
+
+    const total =
+        calculateTotal();
+
+
+    /* No food selected */
+
+    if (total === 0) {
+
+        alert(
+            "Please select at least one Indomie."
+        );
+
+        return;
+    }
+
+
+    /* Customer information */
+
+    const name =
+        document
+            .getElementById("name")
+            .value
+            .trim();
+
+
+    const location =
+        document
+            .getElementById("location")
+            .value
+            .trim();
+
+
+    const phone =
+        document
+            .getElementById("phone")
+            .value
+            .trim();
+
+
+    /* Validate name */
+
+    if (name === "") {
+
+        alert(
+            "Please enter your name."
+        );
+
+        return;
+    }
+
+
+    /* Validate location */
+
+    if (location === "") {
+
+        alert(
+            "Please enter your location."
+        );
+
+        return;
+    }
+
+
+    /* Validate phone */
+
+    if (phone === "") {
+
+        alert(
+            "Please enter your phone number."
+        );
+
+        return;
+    }
+
+
+    /* =================================================
+       WHATSAPP MESSAGE
+    ================================================= */
+
+    const message =
+
+        "Hello Rashida! 👋\n\n" +
+
+        "I want to place an order.\n\n" +
+
+        "🍜 Regular x" +
+        regular +
+        "\n" +
+
+        "🍜 Special x" +
+        special +
+        "\n" +
+
+        "🍜 Jumbo x" +
+        jumbo +
+        "\n\n" +
+
+        "💰 Total: GHS " +
+        total +
+        "\n\n" +
+
+        "👤 Name: " +
+        name +
+        "\n" +
+
+        "📍 Location: " +
+        location +
+        "\n" +
+
+        "📞 Phone: " +
+        phone;
+
+
+    /* YOUR WHATSAPP NUMBER */
+
+    const whatsappNumber =
+        "233554392172";
+
+
+    const whatsappURL =
+
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+</script>
+
+
+</body>
+</html>
